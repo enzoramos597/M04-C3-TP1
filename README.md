@@ -11,5 +11,6 @@ TP1
 5) Colocar en index.css @import "tailwindcss";
 6) Instalar Bootstrap icons npm i bootstrap-icons y agregar @import "bootstrap-icons/font/bootstrap-icons.css"; en index.css
 7) instalar el carusel npm install react-slick slick-carousel 
+8) instalar el motion npm install framer-motion
 
 https://www.youtube.com/watch?v=LSD9qvanJ-Y ver video carousel 

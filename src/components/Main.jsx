@@ -13,11 +13,11 @@ import LogoAnimado from "./LogoAnimado";
 // Flecha siguiente
 const NextArrow = ({ onClick, disabled }) => (
   <div 
-    className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white 
+    className={`absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white 
       ${disabled ? "opacity-40 pointer-events-none" : ""}`}
     onClick={disabled ? undefined : onClick}
   >
-    <span className="text-2xl sm:text-3xl font-bold bg-black/40 rounded-full px-2 py-1 hover:bg-red-600 transition">
+    <span className="text-2xl sm:text-3xl absolute right-2  font-bold bg-black/40 rounded-full px-2 py-1 hover:bg-red-600 transition">
       ❯
     </span>
   </div>
@@ -26,11 +26,11 @@ const NextArrow = ({ onClick, disabled }) => (
 // Flecha anterior
 const PrevArrow = ({ onClick, disabled }) => (
   <div 
-    className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white 
+    className={`absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white 
       ${disabled ? "opacity-40 pointer-events-none" : ""}`}
     onClick={disabled ? undefined : onClick}
   >
-    <span className="text-2xl sm:text-3xl font-bold bg-black/40 rounded-full px-2 py-1 hover:bg-red-600 transition">
+    <span className="text-2xl sm:text-3xl  absolute left-2 font-bold bg-black/40 rounded-full px-2 py-1 hover:bg-red-600 transition">
       ❮
     </span>
   </div>
@@ -84,7 +84,9 @@ const Main = () => {
 
   return (
     <div className="pt-10">
+      {/* Logo animado con motion */}
       <LogoAnimado />
+       {/* Fin Logo animado con motion */}
       {/* Sección de Tendencias */}
       <section className="mb-16 relative">
         <div className="max-w-7xl mx-auto px-4">
@@ -131,7 +133,7 @@ const Main = () => {
         </div>
       </section>
 
-      <hr className="my-10 border-neutral-700" />
+     {/*<hr className="my-10 border-neutral-700" />*/} 
 
       {/* Sección de Preguntas Frecuentes (FAQ) */}
       <section className="py-10 bg-neutral-800">

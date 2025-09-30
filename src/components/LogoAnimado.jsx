@@ -7,8 +7,8 @@ const LogoAnimado = () => {
     <motion.img
       src={Logo}
       alt="Peliflix Logo"
-      className="w-[500px] h-[250px] sm:w-[350px] sm:h-[175px] md:w-[450px] md:h-[225px] mx-auto" 
-      initial={{ x: -300, opacity: 2 }} // empieza desde la izquierda
+      className="w-[600px] h-[500px] sm:w-[350px] sm:h-[175px] md:w-[450px] md:h-[225px] mx-auto" 
+      initial={{ x: -300, opacity: 1 }} // empieza desde la izquierda
       animate={{ x: 0, opacity: 1 }} // se centra
       transition={{ 
         type: "spring", 
